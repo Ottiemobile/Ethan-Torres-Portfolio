@@ -10,11 +10,6 @@ body{
     font-family: VCR OSD Mono, VT323;
 }
 
-
-.graphed-image {
-
-}
-
 .site img {
     size: 150px;
 }
@@ -58,22 +53,110 @@ header nav ul li a {
     
 }
 
-.contact-info a {
+.grid-container {
+   display: grid;
+   grid-template-columns: repeat(3, 33%);
+   grid-template-rows: repeat(3, 33%); 
+}
 
+.gridded-image {
+    height: 200px;
+    width: 400px;
+}
+
+.work-container{
+    height:150px;
+    width:350px;
+    border: orange solid 5px;
+    position: relative;
+}
+.work-img {
+    height: 150px;
+    width: 350px;
+}
+.work-name{
+    height: 75px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+}
+
+.work-img:hover {
+    animation-name: color-shift;
+    height: 200px;
+    width: 425px;
+    
+}
+
+.work-container:hover {
+    color: orange;
+    height: 200px;
+    width: 425px; 
+    position: relative; 
+    transition: color-shift;
+    transition-duration: 0.5s;
+    
+}
+
+.contact-info a {
+ text-decoration: none;
+ 
 }
 
 .section-name {
     font-size: 35px;
+    margin-left: 25px auto; 
+}
 
+@keyframes color-shift {
+    from{
+        background-color: none; 
+    }
+    to{
+        color-adjust: orange;
+    }
 }
 
 /*CSS goal: adapt the page when size changes*/
 @media only screen and (max-width: 980px){
 
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        
+      }
+    
+      header nav ul li a {
+        font-size: 25px;
+        justify-content: space-between;
+      }
+    
+      footer h3, footer div {
+        text-align: center;
+        width: 100%;
+      }
+  
+      .section-title {
+          width:80%;
+      }
 
-
-
-
+      
+  
+      .contact-info iframe{
+          flex: 1 100%;
+      }  
 
 
 }
