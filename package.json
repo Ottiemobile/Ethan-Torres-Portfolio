@@ -1,0 +1,19 @@
+{
+  "name": "ethan-torres-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for Ethan Torres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ottiemobile/Ethan-Torres-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ottiemobile/Ethan-Torres-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Ottiemobile/Ethan-Torres-Portfolio#readme"
+}
